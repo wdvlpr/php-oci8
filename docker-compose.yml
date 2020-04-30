@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+    app:
+        build: ./php72
+        image: app
+        container_name: app
+        ports:
+          - 8080:80
+        volumes:
+          - ./public_html:/var/www/html

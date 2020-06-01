@@ -7,4 +7,5 @@ services:
         ports:
           - 8080:80
         volumes:
-          - ./public_html:/var/www/html
+          - ./codeigniter4:/var/www
+          - ./codeigniter4/public:/var/www/html
